@@ -1,3 +1,5 @@
+#Code was made more DRY using Ruby Mixins.
+
 module Utilities
   def add(first_number, second_number)
     first_number + second_number
