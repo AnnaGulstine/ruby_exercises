@@ -1,3 +1,5 @@
+#Code was made more DRY using Ruby Inheritance.
+
 class SimpleCalculator
   def add(first_number, second_number)
     first_number + second_number
