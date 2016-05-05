@@ -18,7 +18,7 @@ class Superhero
   attr_reader :name, :has_special_tool
   attr_accessor :hitpoints, :alive, :attack
 
-   def initialize(params = {})
+  def initialize(params = {})
     @name = params.fetch(:name, '')
     @hitpoints = params.fetch(:hitpoints, 0)
     @has_special_tool = params.fetch(:has_special_tool, false)
