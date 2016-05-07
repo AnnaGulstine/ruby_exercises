@@ -1,6 +1,4 @@
-# Create a Rectangle class with readable width and height attributes
-# and a method to calculate its area.
-
+# This class represents a rectangle with a method to calculate its area.
 class Rectangle
   attr_reader :width, :height
 

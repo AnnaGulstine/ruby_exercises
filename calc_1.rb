@@ -1,6 +1,4 @@
-# This is a SimpleCalculator class which creates methods for a calculator. The
-# FancyCalculator class inherits from SimpleCalculator.
-
+# This class represents a calculator.
 class SimpleCalculator # :nodoc:
   def add(first_number, second_number)
     first_number + second_number
@@ -19,7 +17,8 @@ class SimpleCalculator # :nodoc:
   end
 end
 
-class FancyCalculator < SimpleCalculator # :nodoc:
+# This class represents a calculator which inherits from the SimpleCalculator.
+class FancyCalculator < SimpleCalculator
   def square_root(number)
     Math.sqrt(number)
   end

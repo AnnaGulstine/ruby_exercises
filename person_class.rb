@@ -1,6 +1,4 @@
-# Create a person class with readable first_name and last_name attributes
-# and a method to calculate its full_name.
-
+# This class represents a Person with a method to calculate full name.
 class Person
   attr_reader :first_name, :last_name
 

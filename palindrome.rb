@@ -4,24 +4,17 @@
 # Examples: eye, madam, racecar
 
 def palindrome?(string)
-  original_word = string.split('')
   original_string = string.split('')
   length = original_string.length
   reversed_string = []
+
   length.times do
     reversed_string << original_string.last
     original_string.pop
   end
-  reversed_string.join
-  
-  # if reversed_string == original_word
-  #   return true
-  # else
-  #   return false
-  # end
 
-  return true if reversed_string == original_word
-  return false unless reversed_string == original_word
+  return true if reversed_string == string.split('')
+  return false
 end
 
 # Driver code - don't touch anything below this line.
