@@ -1,4 +1,7 @@
-# Complete the method called palindrome? which should accept a string as a parameter and return a boolean indicated whether the string is a palindrome. A palindrome is a word that reads the same both forwards and backwards. Examples: eye, madam, racecar
+# Complete the method called palindrome? which should accept a string as a
+# parameter and return a boolean indicated whether the string is a palindrome.
+# A palindrome is a word that reads the same both forwards and backwards.
+# Examples: eye, madam, racecar
 
 def palindrome?(string)
   original_word = string.split('')
@@ -10,38 +13,41 @@ def palindrome?(string)
     original_string.pop
   end
   reversed_string.join
+  
+  # if reversed_string == original_word
+  #   return true
+  # else
+  #   return false
+  # end
 
-  if reversed_string == original_word
-    return true
-  else
-    return false
-  end
+  return true if reversed_string == original_word
+  return false unless reversed_string == original_word
 end
 
 # Driver code - don't touch anything below this line.
-puts "TESTING palindrome?"
+puts 'TESTING palindrome?'
 puts
 
-result = palindrome?("racecar")
+result = palindrome?('racecar')
 
-puts "Your method returned:"
+puts 'Your method returned:'
 p result
 puts
 
 if result == true
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 
-result = palindrome?("wazzzzup")
+result = palindrome?('wazzzzup')
 
-puts "Your method returned:"
+puts 'Your method returned:'
 p result
 puts
 
 if result == false
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end

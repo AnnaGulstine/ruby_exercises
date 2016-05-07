@@ -1,9 +1,14 @@
 # Create a Tree class with a rings attribute and getter method.
 # Trees create a ring for every winter that passes
-# It should have a bear_fruit? method which should return true if the tree has fruit that year. the tree produces fruit when it has more than 7 rings but less than 15, but false otherwise.
-# The class should also have an winter_season method that increases the rings attribute by 1.
-# Hint: remember that with object oriented programming the object holds values in the attributes to describe it's current state. Even when we aren't reading it's attributes, they should be up to date.
-class Tree
+# It should have a bear_fruit? method which should return true if the tree has
+# fruit that year. the tree produces fruit when it has more than 7 rings but
+# less than 15, but false otherwise. The class should also have an winter_season
+# method that increases the rings attribute by 1. Hint: remember that with
+# object oriented programming the object holds values in the attributes to
+# describe it's current state. Even when we aren't reading its attributes, they
+# should be up to date.
+
+class Tree # :nodoc:
   attr_reader :rings
 
   def initialize
@@ -11,47 +16,43 @@ class Tree
   end
 
   def bear_fruit?
-    if @rings > 7 && @rings < 15
-      return true
-    else
-      return false
-    end
+    return true if @rings > 7 && @rings < 15
   end
 
   def winter_season
-    @rings = @rings + 1
+    @rings += 1
   end
 end
 
 # Driver code - don't touch anything below this line.
-puts "TESTING the Tree class..."
+puts 'TESTING the Tree class...'
 puts
 
 tree = Tree.new
 
 result = tree.rings
 
-puts "rings returned:"
+puts 'rings returned:'
 puts result
 puts
 
 if result == 0
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 puts
 
 result = tree.bear_fruit?
 
-puts "bear_fruit? before the first winter:"
+puts 'bear_fruit? before the first winter:'
 puts result
 puts
 
 if result == false
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 puts
 
@@ -61,14 +62,14 @@ end
 
 result = tree.bear_fruit?
 
-puts "bear_fruit? after 8 winters:"
+puts 'bear_fruit? after 8 winters:'
 puts result
 puts
 
 if result == true
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 
 7.times do
@@ -77,12 +78,12 @@ end
 
 result = tree.bear_fruit?
 
-puts "bear_fruit? after 15 winters:"
+puts 'bear_fruit? after 15 winters:'
 puts result
 puts
 
 if result == false
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end

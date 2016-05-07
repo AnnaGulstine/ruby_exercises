@@ -2,7 +2,6 @@
 # and a method to calculate its area.
 
 class Rectangle
-
   attr_reader :width, :height
 
   def initialize(width, height)
@@ -11,52 +10,50 @@ class Rectangle
   end
 
   def area
-    area = @width * @height
+    @width * @height
   end
 end
 
-
-
 # Driver code - don't touch anything below this line.
-puts "TESTING the Rectange class..."
+puts 'TESTING the Rectange class...'
 puts
 
 rectangle = Rectangle.new(10, 30)
 
 result = rectangle.width
 
-puts "width returned:"
+puts 'width returned:'
 puts result
 puts
 
 if result == 10
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 puts
 
 result = rectangle.height
 
-puts "height returned:"
+puts 'height returned:'
 puts result
 puts
 
 if result == 30
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end
 puts
 
 result = rectangle.area
 
-puts "area returned:"
+puts 'area returned:'
 puts result
 puts
 
 if result == 300
-  puts "PASS!"
+  puts 'PASS!'
 else
-  puts "F"
+  puts 'F'
 end

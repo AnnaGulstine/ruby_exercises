@@ -9,16 +9,18 @@ def find_missing_letter(range)
   alphabet = user_input[0].upto(user_input.last).to_a
 
   alphabet.each do |letter|
-    unless user_input.include? letter
-      missing_letters << letter
-    end
+    missing_letters << letter unless user_input.include? letter
+      # missing_letters << letter
+    # end
   end
 
-  if missing_letters.empty?
-    return nil
-  else
-    missing_letters.join
-  end
+  # if missing_letters.empty?
+  #   return nil
+  # else
+  #   missing_letters.join
+  # end
+
+  missing_letters.join if missing_letters.empty?
 end
 
 # Driver code - don't touch anything below this line.

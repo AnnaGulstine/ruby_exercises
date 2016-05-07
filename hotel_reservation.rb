@@ -1,7 +1,7 @@
 # In this exercise, we've already implemented the class, and you have to write
 # the driver code.
-# This class represents a hotel reservation.
 
+# This class represents a hotel reservation.
 class HotelReservation
   attr_accessor :customer_name, :date, :room_number, :amenities
 
